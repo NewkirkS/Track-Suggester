@@ -6,7 +6,6 @@ $(document).ready(function() {
   var rubyScore = 0;
   var phpScore = 0;
   var designScore = 0;
-
   var vsHighScore = function(score) {
     var highScore = Math.max(javaScore, cSharpScore, rubyScore, phpScore, designScore);
     if (score === highScore) {
@@ -32,7 +31,6 @@ $(document).ready(function() {
     var question2 = parseInt($("select#question2").val());
     var question3 = parseInt($("select#question3").val());
     var question4 = parseInt($("select#question4").val());
-
     if (question1 === 1) {
       designScore += 1;
     } else {
@@ -41,7 +39,6 @@ $(document).ready(function() {
       rubyScore += 1;
       phpScore += 1;
     }
-
     if (question2 === 1){
       cSharpScore += 1;
       javaScore += 1;
@@ -50,7 +47,6 @@ $(document).ready(function() {
       phpScore += 1;
       designScore +=1;
     }
-
     if (question3 === 1) {
       javaScore += 1;
     } else if (question3 === 2) {
@@ -62,7 +58,6 @@ $(document).ready(function() {
     } else {
       designScore += 1;
     }
-
     if (question4 === 1) {
       javaScore += 1;
       cSharpScore += 1;
@@ -77,9 +72,19 @@ $(document).ready(function() {
     if (vsHighScore(javaScore) === true) {
       $("#javaImage").removeClass("hidden");
       $("#outputJava").removeClass("hidden");
+    } else if (vsHighScore(cSharpScore) === true) {
+      $("#cSharpImage").removeClass("hidden");
+      $("#outputCSharp").removeClass("hidden");
+    } else if (vsHighScore(rubyScore) === true) {
+      $("#rubyImage").removeClass("hidden");
+      $("#outputRuby").removeClass("hidden");
+    } else if (vsHighScore(phpScore) === true) {
+      $("#phpImage").removeClass("hidden");
+      $("#outputPhp").removeClass("hidden");
+    } else if (vsHighScore(designScore) === true) {
+      $("#designImage").removeClass("hidden");
+      $("#outputDesign").removeClass("hidden");
     }
-
     $("#output").modal("show");
   });
-
 });
