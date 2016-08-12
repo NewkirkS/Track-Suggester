@@ -6,9 +6,10 @@ $(document).ready(function() {
   var rubyScore = 0;
   var phpScore = 0;
   var designScore = 0;
-  var highScore = Math.max(javaScore, cSharpScore, rubyScore, phpScore, designScore);
+  // var highScore = Math.max(javaScore, cSharpScore, rubyScore, phpScore, designScore);
 
   var vsHighScore = function(score) {
+    var highScore = Math.max(javaScore, cSharpScore, rubyScore, phpScore, designScore);
     if (score === highScore) {
       return true;
     } else {
@@ -73,6 +74,7 @@ $(document).ready(function() {
       designScore +=1;
     }
 
+    console.log(vsHighScore(javaScore));
     //Display Highest Score(s) in Modal
 
 
