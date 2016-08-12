@@ -16,9 +16,6 @@ $(document).ready(function() {
   }
 
   // ===FRONT=END===
-  $('#output').modal({
-      show: false
-    });
   $("form#survey").submit(function(event){
     event.preventDefault();
     //Display Name in Modal
@@ -49,15 +46,15 @@ $(document).ready(function() {
       designScore +=1;
     }
     if (question3 === 1) {
-      javaScore += 1;
+      javaScore += 2;
     } else if (question3 === 2) {
-      phpScore += 1;
+      phpScore += 2;
     } else if (question3 === 3) {
-      cSharpScore += 1;
+      cSharpScore += 2;
     }else if (question3 === 4) {
-      rubyScore += 1;
+      rubyScore += 2;
     } else {
-      designScore += 1;
+      designScore += 2;
     }
     if (question4 === 1) {
       javaScore += 1;
@@ -81,10 +78,11 @@ $(document).ready(function() {
     } else if (vsHighScore(phpScore) === true) {
       $("#phpImage").removeClass("hidden");
       $("#outputPhp").removeClass("hidden");
-    } else if (vsHighScore(designScore) === true) {
+    } else if (vsHighScore(designScore) === true && vsHighScore(0) === false){
       $("#designImage").removeClass("hidden");
       $("#outputDesign").removeClass("hidden");
+    } else {
+      event.preventDefault();
     }
-    $("#output").modal("show");
   });
 });
