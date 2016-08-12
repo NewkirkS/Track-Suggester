@@ -1,11 +1,11 @@
 // ===BACK=END===
 var javaScore = 0;
-var c#Score = 0;
+var cSharpScore = 0;
 var rubyScore = 0;
 var phpScore = 0;
 var designScore = 0;
 
-var highScore = Math.max(javaScore, c#Score, rubyScore, phpScore, designScore);
+var highScore = Math.max(javaScore, cSharpScore, rubyScore, phpScore, designScore);
 
 var vsHighScore = function(score) {
   if (score === highScore) {
