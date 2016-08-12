@@ -8,9 +8,15 @@
 
 _This site uses a short survey to suggest a track for students at Epicodus._
 
+## Setup/Installation Requirements
+
+* _Clone repository from Github_
+* _Open index.html!_
+* _Or visit https://newkirks.github.io/Track-Suggester_
+
 ## Known Bugs
 
-_N/A_
+_If fields are blank the modal will still display upon submission of the form. Multiple languages can be recommended in the modal._
 
 ## Technologies Used
 
