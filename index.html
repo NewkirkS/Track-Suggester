@@ -1,17 +1,92 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.0.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Track Suggester</title>
   </head>
   <body>
     <div class="container">
-      
+      <!-- ===NAVBAR=== -->
+      <nav class="navbar navbar-default">
+        <img src="img/epicoduslogo.png" class= "img-responsive pull-left"  id="logo" alt="logo">
+        <h2 class= "navbar-text pull-right">Find the Right Track for You <small>take a short survey</small></h2>
+      </nav>
 
+      <!-- ===Intro=Paragraph=== -->
+    <div class="row">
+      <div class="col-md-12" id="introParagraph">
+        <h3>About:</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ex a metus ornare dapibus. Morbi placerat, quam at eleifend dictum, urna dui laoreet augue, non vehicula dui nisl a risus. Phasellus risus magna, laoreet a sollicitudin et, tempor id mauris. Curabitur consequat libero velit, volutpat lacinia lectus convallis nec. Cras vitae euismod risus. Sed eget suscipit justo, viverra suscipit leo. Proin dictum, velit ac porttitor blandit, mi tellus hendrerit dui, at consectetur libero justo a est. Praesent ipsum elit, sollicitudin sed mollis a, commodo id nibh. Aenean molestie, diam porttitor faucibus gravida, nulla augue viverra mauris, ut suscipit augue nisi non lacus.
+        </p>
+      </div>
+    </div>
 
+    <!-- ===Form=== -->
+    <div id="survey">
+      <form>
+
+        <div class="form-group">
+          <label for="name">Please enter your name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+
+        <div class="form-group">
+          <label for="q1">Which area of development are you interested in?</label>
+          <select class="form-control" id="question1">
+            <option></option>
+            <option>Front-End</option>
+            <option>Back-End</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="q2">What type of company are you interested in working for?</label>
+          <select class="form-control" id="question2">
+            <option></option>
+            <option>Large Enterprise Company</option>
+            <option>Start-Up</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="q3">What type of projects would you most enjoy creating?</label>
+          <select class="form-control" id="question3">
+            <option></option>
+            <option>Android Apps</option>
+            <option>Content-Management Sites</option>
+            <option>Business Software</option>
+            <option>Interactive Web Apps</option>
+            <option>Well Designed Web Pages</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="q4">Question 4:</label>
+          <select class="form-control" id="question4">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="q5">How comfortable are you with difficult syntax and abstract concepts?</label>
+          <select class="form-control" id="question5">
+            <option></option>
+            <option>Comfortable with complexity</option>
+            <option>I want things to be simple</option>
+            <option>Uncomfortable with abstraction</option>
+          </select>
+        </div>
+
+      </form>
+    </div>
     </div>
   </body>
 </html>
