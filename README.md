@@ -6,7 +6,7 @@
 
 ## Description
 
-_This site uses a short survey suggest a track for students at Epicodus._
+_This site uses a short survey to suggest a track for students at Epicodus._
 
 ## Known Bugs
 
