@@ -16,13 +16,11 @@ $(document).ready(function() {
     }
   }
 
-
-
-// ===FRONT=END===
-$('#output').modal({
-    show: false
-  });
-  $("form#survey").submit(function(event){
+  // ===FRONT=END===
+  $('#output').modal({
+      show: false
+    });
+    $("form#survey").submit(function(event){
     event.preventDefault();
 
     //Display Name in Modal
@@ -37,15 +35,48 @@ $('#output').modal({
 
     if (question1 === 1) {
       designScore += 1;
-    } else if (question2 === 2) {
+    } else {
       cSharpScore += 1;
       javaScore += 1;
       rubyScore += 1;
       phpScore += 1;
     }
+
+    if (question2 === 1){
+      cSharpScore += 1;
+      javaScore += 1;
+    } else {
+      rubyScore += 1;
+      phpScore += 1;
+      designScore +=1;
+    }
+
+    if (question3 === 1) {
+      javaScore += 1;
+    } else if (question3 === 2) {
+      phpScore += 1;
+    } else if (question3 === 3) {
+      cSharpScore += 1;
+    }else if (question3 === 4) {
+      rubyScore += 1;
+    } else {
+      designScore += 1;
+    }
+
+    if (question4 === 1) {
+      javaScore += 1;
+      cSharpScore += 1;
+    } else if (question4 === 2) {
+      rubyScore += 1;
+      phpScore += 1;
+    } else {
+      designScore +=1;
+    }
+
     //Display Highest Score(s) in Modal
 
 
     $("#output").modal("show");
   });
+
 });
