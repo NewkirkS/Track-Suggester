@@ -6,7 +6,6 @@ $(document).ready(function() {
   var rubyScore = 0;
   var phpScore = 0;
   var designScore = 0;
-  // var highScore = Math.max(javaScore, cSharpScore, rubyScore, phpScore, designScore);
 
   var vsHighScore = function(score) {
     var highScore = Math.max(javaScore, cSharpScore, rubyScore, phpScore, designScore);
@@ -26,7 +25,7 @@ $(document).ready(function() {
 
     //Display Name in Modal
     var name = $("#name").val();
-    $("#outputName").text(name);
+    $(".outputName").text(name);
 
     //Calculate Scores
     var question1 = parseInt($("select#question1").val());
@@ -74,9 +73,11 @@ $(document).ready(function() {
       designScore +=1;
     }
 
-    console.log(vsHighScore(javaScore));
     //Display Highest Score(s) in Modal
-
+    if (vsHighScore(javaScore) === true) {
+      $("#javaImage").removeClass("hidden");
+      $("#outputJava").removeClass("hidden");
+    }
 
     $("#output").modal("show");
   });
