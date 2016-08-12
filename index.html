@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/scripts.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -26,8 +27,8 @@
     </div>
 
     <!-- ===Form=== -->
-    <div id="survey">
-      <form>
+    <div>
+      <form id="survey">
 
         <div class="form-group">
           <label for="name">Please enter your name:</label>
@@ -65,28 +66,38 @@
         </div>
 
         <div class="form-group">
-          <label for="q4">Question 4:</label>
+          <label for="q4">How comfortable are you with difficult syntax and abstract concepts?</label>
           <select class="form-control" id="question4">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="q5">How comfortable are you with difficult syntax and abstract concepts?</label>
-          <select class="form-control" id="question5">
             <option></option>
             <option>Comfortable with complexity</option>
             <option>I want things to be simple</option>
             <option>Uncomfortable with abstraction</option>
           </select>
         </div>
-
+        <button type="submit" class="btn" data-toggle="modal" data-target="#output">See the Results</button>
       </form>
     </div>
+
+    <div class="modal fade" id="output" tabindex="-1" role="dialog" aria-labelledby="outputLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="img/java.png" class="center-block" alt="Java">
+            <img src="img/c.png" class="center-block" alt="C#">
+            <img src="img/ruby.png" class="center-block" alt="Ruby">
+            <img src="img/php.png" class="center-block" alt="PHP">
+            <img src="img/design.png" class="center-block" alt="Design">
+          </div>
+          <div class="modal-body">
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     </div>
   </body>
 </html>
