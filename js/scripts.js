@@ -7,6 +7,14 @@ var designScore = 0;
 
 var highScore = Math.max(javaScore, c#Score, rubyScore, phpScore, designScore);
 
+var vsHighScore = function(score) {
+  if (score === highScore) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 // ===FRONT=END===
 
 $(document).ready(function() {
