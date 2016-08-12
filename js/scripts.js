@@ -19,13 +19,14 @@ $(document).ready(function() {
   $('#output').modal({
       show: false
     });
-    $("form#survey").submit(function(event){
+  $("form#survey").submit(function(event){
     event.preventDefault();
-
     //Display Name in Modal
     var name = $("#name").val();
     $(".outputName").text(name);
-
+    if (name === "") {
+      $("#nameInput").addClass("has-error");
+    }
     //Calculate Scores
     var question1 = parseInt($("select#question1").val());
     var question2 = parseInt($("select#question2").val());
@@ -67,7 +68,6 @@ $(document).ready(function() {
     } else {
       designScore +=1;
     }
-
     //Display Highest Score(s) in Modal
     if (vsHighScore(javaScore) === true) {
       $("#javaImage").removeClass("hidden");
