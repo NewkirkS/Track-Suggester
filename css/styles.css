@@ -39,3 +39,20 @@ p {
   margin-top: 20px;
   margin-bottom: 35px;
 }
+
+#survey {
+  margin-bottom: 200px;
+}
+
+/*===PARALLAX===*/
+
+.parallax {
+    background-image: url("https://lh3.googleusercontent.com/Sx5Yd_TNU6HJqmvheiLFBdVpm74L8-iNAFCQUaHvrwcuyG7keS9k3M_vvxeWj7H9A3B_MEFg-pYNU7Ms6RGV9-n3JtryoVdgMpSZX9aSkaz9NoipNEd3lvYCnvEmJVm-gjRdaVQzIxX0bOqzOzTRcY2IprxX9FTqFCQ3H61EMS9ro8PrDhGm5_fCXtrdbysAHnfAVjhdVrNsd6iEjBiVxxJzu3WHvvx9BFsgvMaeKcD-V_6JFd_evA2pKOOPLMhSRGe8DhTRqlY-C3JReShZcgiAvIbUeXbJ9QB1m9O1YMMVbS-XnSJyKEc1t3nBACJzLqf6LaUW6_ypdguNupvZiToxUfNfANEsGc4uq9CnG5PQNnC-ww7RrpmmqMyQRLPaSulILBDsWVDr5n-ptSSjMGzyQ_hbOY2faufmfC67LiiFf5UuGW5Y7cqiWkqAX5lh1gpsLhCgITCSbOzJg-vWiOBOGQeuEFRjO59wwBN9yUaq4Cy6erS5vGR_yjO6c4Jf_kya8yBI-YDi6vPdkeWkY3dmt7r6UbGh8HEBS_n5F6tcSmY9Xc1jnYlS5y7jLt4sARvACs7QPhXXfC24_vBtIYwo9mOB4OE=w1299-h971-no");
+
+    min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
