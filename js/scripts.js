@@ -25,7 +25,6 @@ $(document).ready(function() {
   }
   // ===FRONT=END===
   $("form#survey").submit(function(event){
-    debugger;
     //Display Name in Modal
     var name = $("#name").val();
     $(".outputName").text(name);
