@@ -38,7 +38,7 @@
         <div class="form-group">
           <label for="q1">Which area of development are you interested in?</label>
           <select class="form-control" id="question1">
-            <option value="false"></option>
+            <option value="0"></option>
             <option value="1">Front-End</option>
             <option value="2">Back-End</option>
           </select>
@@ -69,6 +69,17 @@
             <option value="1">Comfortable with complexity</option>
             <option value="2">I want things to be simple</option>
             <option value="3">Less comfortable with abstraction</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="q5">Which aspect of a website do you find most appealing?</label>
+          <select class="form-control" id="question5">
+            <option value="0"></option>
+            <option value="1">The way it looks</option>
+            <option value="2">A sleek mobile experience</option>
+            <option value="3">Efficient code behind it</option>
+            <option value="4">The ability to interact with it</option>
+            <option value="5">Its accessibility</option>
           </select>
         </div>
         <button type="submit" class="btn" data-toggle="modal" data-target="#output">See the Results</button>
@@ -124,12 +135,12 @@
                 <span class="outputName"></span>: try Design!
               </h3>
               <p>
-                In a world dominated by big brands and big ideas, the need for skilled designers is greater than ever. Whether you’re an aspiring freelancer, a design-savvy front-end developer, or a budding UI/UX designer, this course is a launching point for anyone interested in designing beautiful, memorable web experiences.
+                In a world dominated by big brands and big ideas, the need for skilled designers is greater than ever. Whether you're an aspiring freelancer, a design-savvy front-end developer, or a budding UI/UX designer, this course is a launching point for anyone interested in designing beautiful, memorable web experiences.
               </p>
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-default" id="closeModal" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
